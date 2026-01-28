@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | SSBE - Legal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1e3a8a",
+                        "primary-light": "#3b82f6",
+                        "text-main": "#000000",
+                        "text-muted": "#334155",
+                        "dark-bg": "#0f172a",
+                        "dark-surface": "#1e293b",
+                        "dark-text": "#f8fafc",
+                    }
+                }
+            }
+        }
+
+        // Dark Mode Logic
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Dark Mode Transitions */
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dark body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .dark .bg-white {
+            background-color: #1e293b !important;
+        }
+
+        .dark .bg-slate-50 {
+            background-color: #0f172a !important;
+        }
+
+        .dark .text-text-main {
+            color: #f8fafc !important;
+        }
+
+        .dark .text-text-muted {
+            color: #94a3b8 !important;
+        }
+
+        .dark .border-slate-100,
+        .dark .border-slate-200 {
+            border-color: #334155 !important;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-text-main font-['Inter'] dark:bg-dark-bg dark:text-dark-text">
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle"
+        class="fixed bottom-8 right-8 z-[100] bg-primary text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center">
+        <span id="theme-toggle-dark-icon" class="hidden material-symbols-outlined">dark_mode</span>
+        <span id="theme-toggle-light-icon" class="hidden material-symbols-outlined">light_mode</span>
+    </button>
+
+    <nav
+        class="sticky top-0 z-50 w-full bg-white backdrop-blur-md border-b border-slate-100 transition-all duration-300 dark:bg-dark-bg/90 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- LEFT: Company Logo & Name -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 bg-primary rounded flex items-center justify-center text-white font-black text-xl">
+                        SS</div>
+                    <div class="flex flex-col">
+                        <span
+                            class="text-xl font-bold tracking-tight text-primary leading-none dark:text-primary-light">SSBE</span>
+                        <span
+                            class="text-[10px] uppercase tracking-widest text-text-muted font-bold mt-1 dark:text-slate-400">Business
+                            Enablers</span>
+                    </div>
+                </a>
+
+                <!-- CENTER: Primary Links -->
+                <div class="hidden md:flex items-center space-x-10 absolute left-1/2 -translate-x-1/2">
+                    <a href="about.html"
+                        class="text-sm font-semibold text-black hover:text-primary transition-colors dark:text-slate-300 dark:hover:text-primary-light">About
+                        Us</a>
+                    <a href="services.html"
+                        class="text-sm font-semibold text-black hover:text-primary transition-colors dark:text-slate-300 dark:hover:text-primary-light">Services</a>
+                </div>
+
+                <!-- RIGHT: Contact Us -->
+                <div class="hidden md:block">
+                    <a href="contact.html"
+                        class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-xl text-sm font-bold transition-all shadow-md hover:shadow-lg">Contact
+                        Us</a>
+                </div>
+
+                <button class="md:hidden p-2 text-primary dark:text-primary-light">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-4 py-20">
+        <h1 class="text-4xl font-extrabold text-primary mb-4 dark:text-primary-light">Privacy Policy</h1>
+        <p class="text-sm text-black mb-4 font-bold uppercase tracking-widest dark:text-slate-400">Effective Date:
+            January <span class="font-mono">2026</span></p>
+        <p class="text-xs text-black mb-12 font-bold dark:text-slate-500">Company: SS Business Enablers Private
+            Limited (“SSBE”, “we”,
+            “our”, “us”)<br>Website: www.ssbe.co.in</p>
+
+        <div class="prose prose-slate max-w-none space-y-10 text-lg leading-relaxed text-black dark:text-slate-300">
+            <section>
+                <h2 class="text-2xl font-bold text-primary mb-4 dark:text-white">1. Introduction</h2>
+                <div class="space-y-4">
+                    <p><strong>1.1 Who We Are</strong></p>
+                    <p>SS Business Enablers Private Limited (“SSBE”) is a business process and digital operations
+                        services company providing services such as insurance operations support, document digitization,
+                        data entry, and manpower deployment. This Privacy Policy applies to SSBE’s publicly accessible
+                        informational website.</p>
+                    <p><strong>1.2 Purpose of This Policy</strong></p>
+                    <p>This Privacy Policy explains how information is handled when you visit our Website. The Website
+                        is informational in nature and does not collect personal information directly from visitors.
+                        SSBE is committed to transparency, minimal data handling, and protecting any information that
+                        may be shared with us through off-Website, user-initiated communication.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-primary mb-4 dark:text-white">2. Information We Collect</h2>
+                <p>SSBE does not actively collect personal information through forms, submissions, or interactive
+                    elements on this Website. Information may be handled only in the following limited and clearly
+                    defined ways.</p>
+                <div class="mt-6 space-y-4">
+                    <p><strong>2.1 Personal Data</strong></p>
+                    <p>The Website itself does not collect personal data. SSBE may receive personal information only if
+                        you voluntarily initiate communication outside the Website, such as via email, telephone, or
+                        formal business correspondence. This information may include: Name, Company or organization
+                        name, Email address, Phone number, and Information voluntarily included in your communication.
+                    </p>
+                    <p><strong>2.2 Technical / Usage Data</strong></p>
+                    <p>When you visit the Website, limited technical information may be collected automatically at the
+                        infrastructure level, such as IP address, browser type, device type, and operating system. This
+                        information is non-identifying and used only for basic Website performance and security.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-text-main mb-4 dark:text-white">3. How We Use Information</h2>
+                <p>SSBE does not use the Website to collect, process, or store personal information. Any personal
+                    information received arises only from off-Website communication initiated by you and may be used
+                    strictly for: Responding to business enquiries, preliminary discussions, maintaining records, and
+                    complying with legal obligations.</p>
+                <p class="mt-4">SSBE does not perform marketing automation, behavioral profiling, or track users across
+                    websites.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-text-main mb-4 dark:text-white">4. Data Retention</h2>
+                <p>As the Website does not directly collect personal data, SSBE does not maintain personal data records
+                    derived from Website usage. Any personal information voluntarily shared through off-Website channels
+                    is retained only for as long as reasonably necessary to fulfill the request or contractual/legal
+                    requirements.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-text-main mb-4 dark:text-white">5. Cookies & Tracking</h2>
+                <p>The Website does not use cookies for marketing, advertising, profiling, or analytics purposes. Any
+                    cookies that may be present are limited to essential or infrastructure-level cookies provided by the
+                    hosting platform for basic functionality or security.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-text-main mb-4 dark:text-white">6. Third-Party Access</h2>
+                <p>SSBE does not share personal information with third parties except when required by law or when
+                    necessary for Website hosting/security under confidentiality obligations. SSBE does not allow third
+                    parties to use Website data for marketing or profiling purposes.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-text-main mb-4 dark:text-white">7. Your Rights</h2>
+                <p>Depending on applicable laws, you may have the right to request access to personal information
+                    voluntarily shared, request correction, or request deletion, subject to legal obligations. Such
+                    requests may be made using the contact details provided below.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-text-main mb-4 dark:text-white">8. Data Security</h2>
+                <p>SSBE implements reasonable technical and organizational safeguards to protect information against
+                    unauthorized access, misuse, or disclosure. However, no Website or electronic transmission method
+                    can be guaranteed to be completely secure.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-primary mb-4 dark:text-white">9. Changes to This Policy</h2>
+                <p>SSBE may update this Privacy Policy periodically to reflect changes in legal requirements or Website
+                    practices. Any updates will be published on this page with a revised effective date.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-text-main mb-4 dark:text-white">10. Contact for Privacy Queries</h2>
+                <p>For questions or concerns related to this Privacy Policy, please contact:</p>
+                <p class="mt-4 font-bold dark:text-primary-light">
+                    SS Business Enablers Private Limited<br>
+                    Email: info@ssbe.co.in<br>
+                    Address: Neelkant Business Park, Unit No D-210, 2nd Floor, Nathani Road, Near Vidhya Vihar Railway
+                    Station, Vidhya Vihar-West, Mumbai, Pin - <span class="font-mono">400086</span>
+                </p>
+            </section>
+
+            <hr class="border-slate-100 dark:border-slate-800">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 pt-20 pb-10 mt-20 dark:bg-dark-bg dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 pb-20 text-center md:text-left text-sm">
+                <!-- LEFT -->
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <div
+                            class="w-10 h-10 bg-primary rounded flex items-center justify-center text-white font-black text-xl">
+                            SS</div>
+                        <span class="text-2xl font-black text-primary dark:text-primary-light">SSBE</span>
+                    </div>
+                    <p class="text-text-muted font-bold dark:text-slate-400">Vidhya Vihar (West), Mumbai - 400086</p>
+                </div>
+                <!-- CENTER -->
+                <div>
+                    <h4 class="text-primary font-black uppercase tracking-widest text-xs mb-6 dark:text-primary-light">
+                        Quick Links</h4>
+                    <div class="flex flex-col gap-4 font-bold text-text-muted">
+                        <a href="about.html"
+                            class="hover:text-primary transition-colors dark:text-slate-400 dark:hover:text-primary-light">About
+                            Us</a>
+                        <a href="services.html"
+                            class="hover:text-primary transition-colors dark:text-slate-400 dark:hover:text-primary-light">Services</a>
+                        <a href="contact.html"
+                            class="hover:text-primary transition-colors dark:text-slate-400 dark:hover:text-primary-light">Contact
+                            Us</a>
+                    </div>
+                </div>
+                <!-- RIGHT -->
+                <div>
+                    <h4 class="text-primary font-black uppercase tracking-widest text-xs mb-6 dark:text-primary-light">
+                        Legal</h4>
+                    <div class="flex flex-col gap-4 font-bold text-text-muted">
+                        <a href="privacy.html"
+                            class="hover:text-primary transition-colors dark:text-slate-400 dark:hover:text-primary-light">Privacy
+                            Policy</a>
+                        <a href="terms.html"
+                            class="hover:text-primary transition-colors dark:text-slate-400 dark:hover:text-primary-light">Terms
+                            of Service</a>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTTOM -->
+            <div class="text-center pt-8 border-t border-slate-200 dark:border-slate-800">
+                <p class="text-[10px] font-black tracking-widest text-text-muted uppercase dark:text-slate-500">© 2026
+                    SS Business Enablers
+                    Private Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialization Scripts -->
+    <script>
+        // Theme Toggle Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (document.documentElement.classList.contains('dark')) {
+            lightIcon.classList.remove('hidden');
+        } else {
+            darkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            darkIcon.classList.toggle('hidden');
+            lightIcon.classList.toggle('hidden');
+
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        });
+    </script>
+</body>
+
+</html>
